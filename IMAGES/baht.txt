@@ -1,0 +1,6 @@
+مع شاشة اي جهاز 
+  n  avec media queries
+ @media(COMDITION ou oriantation =portrait or landspace ) {
+    REGLE DE STYLE
+    STYLE SPESFIQUE
+ }
