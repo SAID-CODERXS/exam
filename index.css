@@ -1,0 +1,441 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-align: center;
+    position: relative;
+}
+
+.main-header {
+    display: flex;
+    justify-content: space-between; /* لتوزيع العناصر على الأطراف والوسط */
+    align-items: center; /* لمحاذاة العناصر عمودياً */
+    padding: 10px 20px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    direction: rtl; /* لضبط الاتجاه الافتراضي (عربي) */
+}
+
+/* الشعار */
+.logo {
+    width: 150px;
+    height: 130px;
+    object-fit: contain;
+}
+
+/* خانة البحث في الوسط */
+.search-container {
+    flex-grow: 1;        /* لتأخذ مساحة مرنة */
+    max-width: 400px;    /* تحديد أقصى عرض للبحث */
+    margin: 0 20px;
+    display: flex;
+    position: relative;
+}
+
+.search-input {
+    width: 100%;
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    border-radius: 25px; 
+    outline: none;
+    transition: 0.3s;
+}
+
+.search-input:focus {
+    border-color: #16a8c2;
+    box-shadow: 0 0 5px rgba(0,123,255,0.5);
+}
+.search-input:hover {
+    border-color: #018ce2;
+    box-shadow: 0 0 5px rgba(0,123,255,0.5);
+}
+
+.search-btn {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.language-switcher {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+#lang-select {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.lang-icon {
+    font-size: 1.2rem;
+}
+
+.img-logosite{
+    width: 100px; height: 90px; padding-left: 10px;
+}
+nav{
+display: flex;
+align-items: center;
+height: 50px;
+background-color: rgb(255, 255, 255);
+color: white;
+font-weight: 550;
+border-bottom: 1px solid gray;
+padding-left: 20px;
+position: sticky;
+top: 0;
+z-index: 102020;
+
+}
+
+
+
+
+.ali:hover{
+    color: #09a5ff;
+}
+
+.a-ACCUEIL{
+ color: #157ab5;
+}
+
+a{
+    text-decoration: none;
+    color: #000000;
+}
+
+
+
+.divp{
+    background-color: rgb(255, 255, 255); 
+    margin-bottom: 8px;
+    color: rgb(0, 0, 0); 
+    padding: 5px;
+    z-index: 300;
+    border-radius: 19px;
+    font-size: 17px;
+}
+.première{
+    color:  rgb(170, 34, 34);
+    padding: 40px; 
+    justify-content: center; 
+    align-items: center; 
+    width: 960px; 
+    height: 350px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.titre1{
+    padding-top: 0px;
+    padding-bottom: 13px;
+
+
+}
+
+
+.button-xo3ba{
+    border: 1px solid white ;
+    width: 90px; 
+    height: 30px; 
+    background-color:rgba(255, 251, 251, 0.229)  ; 
+    border-radius: 16px; 
+    position: absolute; 
+    top: 80% ; left: 40px; 
+    padding: 4px;
+}
+.button-xo3ba:hover{
+    border: 1px solid rgb(255, 255, 255);
+    background: linear-gradient(to top, #0afffb, #949594);
+   
+
+}
+.titre2_CHIFFRES{
+ width: 100%;
+padding-top: 5px
+}
+
+.main{
+    display: flex;
+    flex-wrap: wrap
+}
+.sectionONE{
+    /* background-image: url(/CMC-enco/urs.jpg) ; */
+    background-color: rgba(255, 255, 255);
+    justify-content: center;  
+    display: flex;
+    height: 320px;
+    width: 100%;
+}
+
+
+
+
+
+.sectiontwo{
+    background-color: rgba(255, 255, 255);
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    flex-wrap: wrap; 
+    height: 350px;
+    width: 100%;
+    gap: 30px;
+    padding-top: 20px;
+    padding-bottom: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+.section3{
+    background-color: rgba(255, 255, 255);
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    gap: 40px; 
+    flex-wrap: wrap; 
+    height: 400px;
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+.section5{
+
+    background-color: rgb(255, 255, 255); 
+    display: flex; 
+    flex-wrap: wrap; 
+    display: flex; 
+    justify-content: center; 
+    gap: 30px; 
+    align-items: center;
+    flex-wrap: wrap;
+    height:400px;
+    max-height: 900px;
+    width: 100%;
+     padding-top: 10px;
+     padding-bottom: 10px;
+}
+
+.box_chiffres{
+    background-color: rgb(255, 255, 255);
+    width: 160px;
+    border: 1px solid black;
+    height: 160px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 16px;
+    
+}
+
+.box_chiffres:hover{
+
+    background: linear-gradient(to top, #feffff, #05c5ff44);
+    width: 180px;
+    height: 190px;
+    box-shadow: 1px 1px 20px 4px rgb(8, 173, 233) ;
+
+
+
+
+}
+.imgicon{
+    width: 40px;
+    height: 40px;
+    margin-top: 10px;
+
+}
+.box_offre{
+    background-color: rgb(255, 255, 255);
+    width: 172px;
+    height: 254px;
+    border-radius: 16px;
+} 
+.offre-img{
+    width: 172px; 
+    height: 254px;
+    border-radius: 16px;
+
+}
+.box_offre:hover{
+
+    box-shadow: 1px 1px 20px 4px rgb(8, 173, 233) ;
+
+
+
+}
+h4,h1{
+
+    color: rgb(5, 95, 136);
+}
+.img-structure{
+    width: 172px; 
+    height: 254px;
+    border-radius: 16px;
+    box-shadow: 1px 1px 5px 1px rgb(134, 138, 139) ;
+}
+.img-structure:hover{
+    box-shadow: 1px 1px 20px 4px rgb(8, 173, 233) ;
+}
+
+.sectiontwo{
+    flex-wrap: wrap; width: 100%; margin-top: 20px; ;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+.div_titre_Section{
+    padding-bottom: 20px;
+    flex-wrap: wrap;
+    width: 100%; 
+    margin-top: 0px
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        /* 1. إخفاء القوائم الفرعية تماماً في الحالة العادية */
+.dropdown-menu {
+    display: none;      /* هذا السطر هو الذي سيخفي القائمة المبعثرة */
+    position: absolute; /* لجعلها تظهر "فوق" المحتوى ولا تدفع العناصر الأخرى */
+    background-color: rgba(206, 220, 224, 0.805);
+    min-width: 180px;
+    border-radius: 10px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.1);
+    padding: 10px;
+    list-style: none;
+    z-index: 999;       /* لضمان ظهورها فوق أي صور أو أقسام أخرى */
+}
+
+/* 2. جعل العنصر الأب (li) نقطة انطلاق للقائمة */
+.dropdown {
+    position: relative;
+}
+
+/* 3. السحر: إظهار القائمة الفرعية فقط عند مرور الماوس فوق الأب */
+.dropdown:hover .dropdown-menu {
+    display: block;     /* عند وضع الماوس، تتحول من مخفي إلى ظاهر */
+}
+
+/* 4. تنسيق بسيط للروابط داخل القائمة لتبدو مرتبة */
+.dropdown-menu li a {
+    color: black;
+    text-decoration: none;
+    display: block;
+    padding: 8px 0;
+}
+
+.dropdown-menu li a:hover {
+    color: #e67e22; /* تغيير اللون عند التأشير */
+}
+
+
+
+
+
+
+                                                     /* footer*/
+.divEspaces{
+    border-left: 2px solid rgb(0, 0, 0) ;
+}
+.divlogo{
+         border-right: 2px solid rgb(0, 0, 0) ;  
+} 
+.footer-container {
+    background-color: rgb(76, 83, 88);
+    display: flex;
+    gap: 10px;
+    padding: 40px 0 20px 0;
+    text-align: center;
+    flex-wrap: wrap; 
+    align-items: center;             
+    margin: 0 auto;           
+    padding: 0 20px;
+    height: 400px; 
+}
+
+
+.footer-column {
+    flex: 1; 
+    padding: 9px;
+    background-color: rgb(76, 83, 88);
+    height: 270PX;  
+    color: rgb(255, 255, 255);               
+    min-width: 250px;            
+    line-height: 25px;
+}
+
+.footer-column h3 {
+    border-bottom: 2px solid #7aa8c2; /* خط برتقالي تحت العنوان */
+    display: inline-block;
+    padding-bottom: 5px;
+    
+    margin-bottom: 15px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column a {
+    color: #000000;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-column a:hover {
+    color: rgb(9, 209, 220);
+    padding-bottom: 7px;
+    font-size: 18px;
+    border-bottom: 1px solid rgb(7, 174, 230);
+}
+
+.footer-bottom {
+    text-align: center;
+    border-top: 2px solid #000000;
+    padding-top: 20px;
+    font-size: 14px;
+    color:  rgb(246, 246, 246);
+    width: 100%;
+    height: 60px;
+}

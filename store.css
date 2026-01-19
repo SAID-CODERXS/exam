@@ -1,0 +1,50 @@
+/* =========================================
+   STYLE SPÉCIFIQUE PAGE STORE
+   ========================================= */
+
+/* 1. Bannière Store */
+.store-header {
+    background-image: url('./IMAGES/STOOOORI.png');
+    opacity: 0.9;
+    background-size: cover;
+    background-position: center;
+    height: 50vh; /* Un peu moins haut que les autres pour laisser place aux produits */
+    padding-top: 80px;
+    margin-bottom: 30px;
+}
+#P1{
+    color: #000206;
+}
+h1{
+    color: #000;
+}
+/* 2. Couleur OR / GOLD (Thème Store) */
+.text-gold {
+    color: #d4a017; /* Une couleur Or foncé lisible */
+}
+
+.btn-gold {
+    background-color: #ffc107; /* Jaune Warning Bootstrap */
+    color: #000;
+    border: 2px solid #fff;
+}
+
+.btn-gold:hover {
+    background-color: #ffca2c;
+    transform: scale(1.1);
+}
+
+/* 3. Animation des Cartes Produits */
+.product-card {
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.product-card:hover {
+    transform: translateY(-5px); /* La carte monte */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15) !important; /* Ombre plus forte */
+}
+
+.product-card img {
+    border-bottom: 1px solid #f0f0f0; /* Petite ligne sous l'image */
+}

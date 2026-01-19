@@ -1,0 +1,151 @@
+
+
+
+
+
+.backphoto {
+
+    background-color: white;
+    background-size: cover;
+    height: 70px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    
+}
+
+
+.backphoto .navbar-nav .nav-link {
+    color: #000000 !important;    
+    font-weight: 500;            
+    font-size: 16px;             
+    margin-left: 15px;           
+    transition: all 0.3s ease;   
+    text-transform: uppercase;    
+}
+
+.backphoto .navbar-nav .nav-link:hover {
+    color: yellow !important;    
+    transform: translateY(-3px);  
+    text-shadow: 0 0 10px rgba(0, 229, 255, 0.6); 
+}
+
+.backphoto .navbar-nav .nav-link.active {
+    border-bottom: 2px solid #000000; 
+}
+#EDIT{
+    color: #0694d6;
+}
+/* 1. HERO SECTION */
+.hero-section {
+    background-image: url('/IMAGES/IN2.png');
+    opacity: 1;
+    background-size: cover;
+    background-position: center;
+    min-height: 90vh;    
+    padding-top: 100px;    
+    padding-bottom: 150px; 
+    display: flex;
+    align-items: center;  
+}
+
+/* la couleur d'ecriture  sur l'image */
+.hero-section h1, 
+.hero-section p {
+    color: #ffffff;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);
+}
+
+.mt-n5 {
+    margin-top: -100px; /* C'est ça qui fait remonter les cartes sur l'image ! */
+}
+
+/* 3. DESIGN DES CARTES */
+.card-hover {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 15px; 
+    overflow: hidden;    
+}
+
+.card-hover:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2) !important; 
+}
+
+/* Style pour le bloc date carré droite */
+.date-box {
+    min-width: 60px; 
+    line-height: 1.2; /
+}
+
+/* Petit effet quand on passe la souris sur une actualité */
+.hover-shadow {
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.hover-shadow:hover {
+    transform: translateX(5px); /* Décale légèrement vers la droite */
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+}
+
+/* La petite barre bleue à gauche du titre "Actualités" */
+.border-start.border-4 {
+    border-left-width: 5px !important;
+}
+
+/* Fond personnalisé plus joli que le noir pur */
+.footer-custom {
+    background-color: #0d1b2a; /* Un bleu très foncé (presque noir) très classe */
+    color: #ffffff;
+}
+
+/* Style des liens du footer */
+
+.footer-link {
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+/* Effet quand on passe la souris sur un lien */
+.footer-link:hover {
+    color: #00e5ff !important; /* Cyan lumineux */
+    padding-left: 5px; /* Petit décalage vers la droite */
+}
+
+/* Style des ronds pour les icônes réseaux sociaux */
+.btn-floating {
+    transition: all 0.3s ease;
+}
+
+.btn-floating:hover {
+    transform: rotate(360deg); /* L'icône tourne sur elle-même au survol ! */
+    background-color: #ffffff;
+    color: #000;
+}
+
+/* faire un desin pour mon nom  */
+
+
+.lbaidaoui {
+    color: #ffffff;
+    font-weight: 600;
+    text-transform: capitalize; /* Met la 1ère lettre de chaque mot en majuscule */
+    position: relative; /* Nécessaire pour l'animation */
+    text-decoration: none;
+    padding-bottom: 2px;
+}
+
+/* Création de la ligne du dessous (invisible au départ) */
+
+.lbaidaoui {
+    color: #00e5ff; 
+    font-weight: 100; 
+    text-transform: uppercase;
+    letter-spacing: 1px; 
+    text-shadow: 0 0 10px rgba(0, 229, 255, 0.5), 0 0 20px rgba(0, 229, 255, 0.3);
+    transition: all 0.3s ease;
+}
+
+.lbaidaoui:hover {
+    color: #fff;
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
+}

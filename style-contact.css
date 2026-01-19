@@ -1,0 +1,377 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-align: center;
+}
+.main-header {
+    display: flex;
+    justify-content: space-between; /* لتوزيع العناصر على الأطراف والوسط */
+    align-items: center; /* لمحاذاة العناصر عمودياً */
+    padding: 10px 20px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    direction: rtl; /* لضبط الاتجاه الافتراضي (عربي) */
+}
+
+/* الشعار */
+.logo {
+    width: 150px;
+    height: 130px;
+    object-fit: contain;
+}
+
+/* خانة البحث في الوسط */
+.search-container {
+    flex-grow: 1;        /* لتأخذ مساحة مرنة */
+    max-width: 400px;    /* تحديد أقصى عرض للبحث */
+    margin: 0 20px;
+    display: flex;
+    position: relative;
+}
+
+.search-input {
+    width: 100%;
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    border-radius: 25px; 
+    outline: none;
+    transition: 0.3s;
+}
+
+.search-input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0,123,255,0.2);
+}
+
+.search-btn{
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.language-switcher {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+#lang-select {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.lang-icon {
+    font-size: 1.2rem;
+}
+.img-logosite{
+    width: 100px; height: 90px; padding-left: 10px;
+}
+nav{
+display: flex;
+align-items: center;
+height: 50px;
+background-color: rgb(255, 255, 255);
+color: white;
+font-weight: 550;
+border-bottom: 1px solid gray;
+padding-left: 20px;
+position: sticky;
+top: 0;
+z-index: 102020;
+
+}
+.ulnav{
+    display: flex; gap: 20px; list-style-type: none;
+} 
+.a-Contact{
+ color: #157ab5;
+}
+
+.ali:hover{
+    color: #09a5ff;
+}
+a{
+    text-decoration: none;
+    color: #000000;
+}
+
+
+
+.sectiontoute{
+    width: 100%; 
+    background-image: url(./IMAGES/cmcana.jpg); 
+    background-repeat: no-repeat; 
+    background-size: cover;  
+    flex-wrap: wrap; display: flex; 
+    justify-content: center; 
+    gap: 20px; 
+    align-items: center; 
+    height: 960px;
+}
+
+
+
+.CONTACTEZ-NOUS{
+    width: 100%; 
+    align-items:  center; 
+    display: flex; 
+    justify-content: center; 
+    height: 50px;
+}
+
+.INFORMATIONS{
+    width: 45%; 
+    background-color:rgba(255, 255, 255, 0.5);
+    border-radius: 18px; 
+    height: 400px;
+    padding: 40px;
+    margin-top: 0px;
+}
+.DIV-MAPS{
+    width: 45%; 
+    background-color:rgba(255, 255, 255, 0.5);
+    border-radius: 18px;
+    height: 400px; 
+    padding: 40px;
+    margin-top: 0px;
+} 
+.carteaddress{
+    margin-top: 20px;
+    width: 200px;
+    height: 350PX;
+    background-color: rgb(165, 161, 157);
+}
+
+.divsuivernous{
+    border-radius: 18px;
+    width: 80%; 
+    background-color: rgba(255, 255, 255,0.3); 
+    height: 200px; 
+    gap: 20px;
+    display: flex; 
+    justify-content: center; 
+    flex-wrap: wrap; 
+    align-items: center;
+}
+
+h1{
+    width: 100%;
+    color:black;
+}
+.divyou{
+    background-color: white; 
+    height: 100px;
+    width:10%; 
+    line-height: 30px;
+    padding-top: 23px;
+    border-radius: 17px;
+}
+
+
+.divx{
+
+   background-color: rgb(255, 253, 253); 
+   width:10%; 
+   line-height: 30px;
+   height: 100px; 
+   padding-top: 20px;
+   border-radius: 17px;
+}
+
+
+.divface{
+    border-radius: 17px;
+    background-color: rgb(255, 255, 255); 
+    width:10%; 
+    padding-top: 15px; 
+    height: 100px;
+    line-height: 30px;
+}
+
+.divinsta{
+    border-radius: 17px;
+    background-color: rgb(255, 255, 255); 
+    width:10%; 
+    padding-top: 25px; 
+    line-height: 30px;
+    height: 100px;
+}
+iframe{
+    border-radius: 15px;
+    margin-top: 10px;
+    height: 290px;
+}
+.lesdonnee{
+    margin-top: 50px;
+    line-height: 50px;
+    font-size: 22px;
+}
+
+
+.bn-reclama{
+    background-color: rgba(255, 255, 255, 0.558);
+    border: 1px solid black;
+    width: 130px;
+    border-radius: 6px;
+    padding: 7px;
+}
+.bn-reclama a{
+    text-decoration: none;
+    color: #000000;
+}
+
+
+
+
+/* hover start */
+
+
+.bn-reclama:hover{
+    background-color: rgb(38, 187, 213);
+    color: #ffffff;
+    width: 150px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.divsuivernous:hover{
+    background-color: rgba(255, 255, 255, 0.4);
+    width: 90%;
+}
+.divshoc:hover{
+    background-color: #00000023;
+    height: 110px;
+    width:13%; 
+}
+
+
+
+
+
+.dropdown-menu {
+    display: none;      /* هذا السطر هو الذي سيخفي القائمة المبعثرة */
+    position: absolute; /* لجعلها تظهر "فوق" المحتوى ولا تدفع العناصر الأخرى */
+    background-color: rgba(206, 220, 224, 0.805);
+    min-width: 180px;
+    border-radius: 10px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.1);
+    padding: 10px;
+    list-style: none;
+    z-index: 999;       /* لضمان ظهورها فوق أي صور أو أقسام أخرى */
+}
+
+/* 2. جعل العنصر الأب (li) نقطة انطلاق للقائمة */
+.dropdown {
+    position: relative;
+}
+
+/* 3. السحر: إظهار القائمة الفرعية فقط عند مرور الماوس فوق الأب */
+.dropdown:hover .dropdown-menu {
+    display: block;     /* عند وضع الماوس، تتحول من مخفي إلى ظاهر */
+}
+
+/* 4. تنسيق بسيط للروابط داخل القائمة لتبدو مرتبة */
+.dropdown-menu li a {
+    color: black;
+    text-decoration: none;
+    display: block;
+    padding: 8px 0;
+}
+
+.dropdown-menu li a:hover {
+    color: #e67e22; /* تغيير اللون عند التأشير */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                        /* footer */
+.divEspaces{
+    border-left: 2px solid rgb(91, 64, 64) ;
+}
+.divlogo{
+       border-right: 2px solid rgb(91, 64, 64) ;
+ 
+}
+.footer-container {
+    background-color: rgb(227, 220, 220);
+    display: flex;
+    gap: 10px;
+    padding: 40px 0 20px 0;
+    text-align: center;
+    flex-wrap: wrap; 
+    align-items: center;             
+    margin: 0 auto;           
+    padding: 0 20px;
+    height: 400px; 
+}
+
+
+.footer-column {
+    flex: 1; 
+    padding: 9px;
+    background-color: rgb(227, 220, 220);
+    height: 270PX;  
+    color: rgb(0, 0, 0);               
+    min-width: 250px;            
+    line-height: 25px;
+}
+
+.footer-column h3 {
+    border-bottom: 2px solid #09a5ff; /* خط برتقالي تحت العنوان */
+    display: inline-block;
+    padding-bottom: 5px;
+    
+    margin-bottom: 15px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column a {
+    color: #000000;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-column a:hover {
+    color: rgb(9, 209, 220);
+    padding-bottom: 7px;
+    font-size: 18px;
+    border-bottom: 1px solid rgb(7, 174, 230);
+}
+
+.footer-bottom {
+    text-align: center;
+    border-top: 2px solid #34495e;
+    padding-top: 20px;
+    font-size: 14px;
+    color:  rgb(0, 0, 0);
+    width: 100%;
+    height: 60px;
+}

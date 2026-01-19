@@ -1,0 +1,135 @@
+/* =========================================
+   STYLE SPÉCIFIQUE PAGE INTERNAT
+   ========================================= */
+
+/* 1. La Bannière Internat */
+.internat-header {
+    /* image pour acceuil  */
+    background-image: url('./IMAGES/image_restau.jpeg');
+    background-size: cover;
+    background-position: center;
+    height: 60vh; /* 60% de la hauteur de l'écran */
+    padding-top: 80px; /* Pour ne pas être caché par la navbar fixe */
+    margin-bottom: 50px;
+}
+
+/* 2. Effet de Zoom sur les images du Zig-Zag */
+.hover-zoom {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-zoom:hover {
+    transform: scale(1.02); /* Grossit très légèrement */
+    box-shadow: 0 1rem 3rem rgba(0,0,0,.175)!important;
+}
+
+/* 3. Navbar Active (Indicateur visuel) */
+/* Ce code souligne le lien actif pour montrer qu'on est sur la page */
+.backphoto .navbar-nav .nav-link.active {
+    color: #00e5ff !important; 
+    font-weight: bold;
+    border-bottom: 2px solid #00e5ff;
+}
+
+/* --- STYLE DES BOUTONS FLOTTANTS INTERNAT --- */
+
+.z-index-floating {
+    z-index: 1050; 
+}
+
+/* Style commun pour les boutons ronds */
+.btn-float {
+    width: 60px;        /* Largeur fixe */
+    height: 60px;       /* Hauteur fixe pour faire un rond parfait */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid white; /* Petite bordure blanche pour faire ressortir */
+    transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275); /* Animation "rebond" */
+}
+
+/* Animation au survol : Le bouton grossit un peu */
+.btn-float:hover {
+    transform: scale(1.15) translateY(-5px); /* Grossit et monte un peu */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3) !important;
+}
+
+/* Le bouton 'Perdu' (point d'interrogation) tourne quand on passe la souris */
+.btn-float .fa-question {
+    transition: transform 0.5s ease;
+}
+.btn-float:hover .fa-question {
+    transform: rotate(20deg);
+}
+
+/* ============travail sur formulaire de sortie intenat===========  */
+* {box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+background-color: #f2f4f7;
+padding: 20px;
+ }
+ .card {
+max-width: 420px;
+margin: auto;
+background: white;
+padding: 25px;
+border-radius: 10px;
+box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+h3, legend {
+font-size: 20px;
+font-weight: bold;
+text-align: center;
+margin-bottom: 20px;
+}
+
+.mb-3, .mb-4 {
+margin-bottom: 15px;
+ }
+
+input[type="text"], input[type="radio"], select {
+font-size: 14px;
+}
+
+input[type="text"] {
+width: 100%;
+padding: 10px;
+border-radius: 6px;
+border: 1px solid #ccc;
+}
+
+input[type="text"]:focus {
+outline: none;
+border-color: #3e495c;
+}
+
+.form-check {
+margin-bottom: 10px;
+}
+
+.form-check-input {
+margin-right: 8px;
+cursor: pointer;
+}
+
+.form-check-label {
+cursor: pointer;}
+
+button {
+background-color: #78abf8;
+color: white;
+padding: 12px;
+border: none;
+border-radius: 8px;
+font-size: 15px;
+cursor: pointer;
+width: 100%;
+ }
+
+button:hover {
+background-color: #3d68a9;
+            }

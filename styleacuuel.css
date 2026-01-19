@@ -1,0 +1,269 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-align: center;
+    position: relative;
+}
+
+header {
+    background-color: white;
+    display: flex;
+    height: 80px;
+}
+
+.header-logo {
+    width: 100px; 
+    height: 90px; 
+    padding-left: 10px;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    color: white;
+    font-weight: 550;
+    background-color: #3b84ce;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    padding-left: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 102020;
+}
+
+.nav-list {
+    display: flex; 
+    gap: 20px; 
+    list-style-type: none;
+    width: 100%;
+    align-items: center;
+}
+
+.nav-item-right {
+    margin-left: auto;
+}
+
+/* Main */
+.main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Section ONE */
+.sectionONE {
+    background-color: rgba(251, 124, 124, 0.5);
+    justify-content: center;
+    display: flex;
+    height: 320px;
+    width: 100%;
+}
+
+.hero-image-container {
+    background-color: rgb(255, 255, 255); 
+    width: 40%; 
+    padding: 25px;
+}
+
+.hero-img {
+    width: 95%; 
+    height: 300px; 
+    border-radius: 9px;
+}
+
+.hero-text-container {
+    background-color: rgb(255, 255, 255); 
+    height: 400px; 
+    width: 60%; 
+    padding: 8px 0px 8px 8px;
+}
+
+.hero-logo {
+    padding-bottom: 10px; 
+    margin-top: 20px;
+}
+
+/* Section TWO (Chiffres) */
+.sectiontwo {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 350px;
+    width: 100%;
+    gap: 30px;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    margin-top: 20px;
+}
+
+.section-title {
+    width: 100%;
+}
+
+.box_chiffres {
+    background-color: rgb(209, 216, 219);
+    width: 160px;
+    height: 220px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 16px;
+}
+
+.imgicon {
+    width: 40px;
+    height: 40px;
+    margin-top: 10px;
+}
+
+/* Section 3 (Offres) */
+.section3 {
+    background-color: rgb(101, 50, 50);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    height: 300px;
+    width: 100%;
+}
+
+.box_offre {
+    background-color: rgb(255, 255, 255);
+    width: 172px;
+    height: 254px;
+    border-radius: 16px;
+}
+
+.offre-img {
+    width: 172px;
+    height: 254px;
+    border-radius: 16px;
+}
+
+.btn-details {
+    width: 90px; 
+    height: 30px; 
+    background-color: rgba(255, 251, 251, 0.229); 
+    border-radius: 16px; 
+    position: absolute; 
+    top: 80%; 
+    left: 40px; 
+    padding: 4px;
+}
+
+/* Map Section */
+.map-section {
+    width: 100%; 
+    height: 300px; 
+    background-color: rgb(0, 0, 0);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Section 5 (Structure) */
+.section5 {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    height: 350px;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.img-structure {
+    width: 172px;
+    height: 254px;
+    border-radius: 16px;
+}
+
+/* Dropdown Menu */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 180px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.1);
+    padding: 10px;
+    list-style: none;
+    z-index: 999;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu li a {
+    color: black;
+    text-decoration: none;
+    display: block;
+    padding: 8px 0;
+}
+
+.dropdown-menu li a:hover {
+    color: #e67e22;
+}
+
+/* Footer */
+.footer-container {
+    display: flex;
+    gap: 10px;
+    text-align: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding: 0 20px;
+    background-color: #bdc3c7;
+    height: 400px;
+}
+
+.footer-column {
+    flex: 1;
+    padding: 5px;
+    background-color: #e67e22;
+    height: 300px;
+    min-width: 250px;
+    margin-bottom: 20px;
+    line-height: 25px;
+}
+
+.social-column {
+    display: flex; 
+    flex-wrap: wrap;
+}
+
+.social-icon {
+    width: 40px; 
+    height: 40px;
+}
+
+.footer-column h3 {
+    border-bottom: 2px solid #e67e22;
+    display: inline-block;
+    padding-bottom: 5px;
+    padding-top: 8px;
+    margin-bottom: 15px;
+}
+
+/* Common Styles */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h4, h1 {
+    color: rgb(5, 95, 136);
+}

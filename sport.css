@@ -1,0 +1,142 @@
+/* =========================================
+   STYLE SPÉCIFIQUE PAGE SPORT
+   ========================================= */
+
+/* 1. Image de fond (Hero) */
+.sport-header {
+    
+    background-image: url('./IMAGES/sport11.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    padding-top: 80px;
+    margin-bottom: 50px;
+}
+
+/* 2. Utilitaires couleur Vert Sport */
+.text-success {
+    color: #198754 !important; 
+}
+
+.bg-success {
+    background-color: #198754 !important;
+}
+
+.btn-success {
+    background-color: #198754;
+    border-color: #198754;
+}
+
+/* 3. Petit effet sur les cartes Clubs au survol */
+.card-sport {
+    transition: transform 0.3s ease;
+}
+
+.card-sport:hover {
+    transform: translateY(-5px); /* La carte monte un peu */
+}
+
+
+/* ======formulaire d'inscription club=========== */
+
+/* =========================================
+   STYLE DU FORMULAIRE CLUB (Thème Indigo)
+   ========================================= */
+
+/* Le Bouton Indigo personnalisé */
+.btn-indigo {
+    background-color: #6f42c1;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-indigo:hover {
+    background-color: #59339d; /* Un peu plus foncé au survol */
+    color: white;
+}
+
+/* Effet de Focus (Quand on clique dans un champ) */
+#modalClub .custom-focus:focus {
+    border-color: #6f42c1;
+    box-shadow: 0 0 0 0.2rem rgba(111, 66, 193, 0.2);
+}
+
+/* Espacement des boutons radios */
+#modalClub .form-check {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 6px;
+    cursor: pointer; /* Change la souris en main */
+}
+
+#modalClub .form-check-input {
+    cursor: pointer;
+}
+
+/* Style des labels */
+#modalClub .form-label, 
+#modalClub legend {
+    font-size: 14px;
+    color: #333;
+}
+
+/* ========== reserver terrain ===============  */
+/* =========================================
+   STYLE FORMULAIRE RÉSERVATION (Thème Vert)
+   ========================================= */
+
+/* Le Bouton Vert personnalisé */
+.btn-reservation {
+    background-color: #28a745;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.btn-reservation:hover {
+    background-color: #218838;
+    color: white;
+}
+
+/* Focus Vert (Quand on clique dans un champ) */
+#modalReservation .custom-focus-res:focus {
+    border-color: #28a745;
+    box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.15);
+}
+
+/* Style des Checkboxes */
+#modalReservation .form-check {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+#modalReservation .custom-check-res {
+    cursor: pointer;
+    width: 1.2em; /* Un peu plus grand */
+    height: 1.2em;
+}
+
+/* Si la case est cochée, elle devient verte (Bootstrap le fait, mais on force ici) */
+#modalReservation .custom-check-res:checked {
+    background-color: #28a745;
+    border-color: #28a745;
+}
+
+/* Labels */
+#modalReservation .form-label, 
+#modalReservation legend {
+    font-size: 14px;
+    color: #333;
+    font-weight: bold;
+}
